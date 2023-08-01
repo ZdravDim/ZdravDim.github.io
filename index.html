@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zdravkovic Dimitrije CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/2758d855c0.js" crossorigin="anonymous"></script>
+    <style>
+      body{
+        margin: 0;
+        background-color: #fbf9f6;
+        padding-bottom: 10vh;
+      }
+      header{
+        background-color: #6e2751;
+        height: min(250vh, 50vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #headerInfo{
+        margin-top: min(1vh, 1vw);
+        text-align: center;
+      }
+      h1{
+        margin: auto;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 8vw;
+        color: #fbf9f6;
+      }
+      p{
+        font-size: 5.5vw;
+        color: #fbf9f6;
+        margin: auto;
+        text-align: center;
+        font-family: 'Mulish', sans-serif;
+      }
+      span{
+        color: white;
+        text-align: center;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+        word-break: break-all;
+      }
+      a:hover{
+        background-color: rgba(255, 255, 0, 0.2);
+      }
+      .text{
+        font-size: 4vw;
+        display: inline;
+        color: #481a35;
+      }
+      .bold{
+        font-weight: 900;
+        font-size: min(50vh, 4.2vw);
+      }
+      .item{
+        padding-left: 10%;
+        padding-top: 10%;
+        padding-right: 10%;
+      }
+      ul{
+        list-style-position: inside;
+        padding-left: 0;
+      }
+      li{
+        font-family: 'Mulish', sans-serif;
+        font-size: 4vw;
+        color: #481a35;
+      }
+      .box{
+        margin-top: 1%;
+        margin-bottom: 3%;
+        width: min(60vh, 12.5vw);
+        height: min(8vh, 1.8vw);
+        border-radius: min(1vh, 0.3vw);
+        background-color: rgb(164, 117, 150);
+      }
+      .br{
+        height: 2vw;
+      }
+      .circle::after {
+        content: "";
+        float: right;
+        background-color: #eee5e8;
+        margin-top: calc(11.5px - 1vw);
+        margin-right: 1.3vw;
+        width: 2vw;
+        height: 2vw;
+        -moz-border-radius: 1vw;
+        -webkit-border-radius: 1vw;
+        border-radius: 1vw;
+      }
+      .fill::after{
+        background-color: #a47596;
+      }
+      .fa-solid{
+        position: relative;
+        font-size: 5vw;
+        bottom: 0.3vw;
+      }
+      #span div .fa-solid{
+        bottom: 0;
+      }
+      .heading{
+        font-size: 5vw;
+      }
+      @media (max-width: 992px){
+        #span{
+          font-size: 4.5vw;
+        }
+        #span div{
+          margin-top: 1vw;
+        }
+      }
+      @media (min-width: 400px){
+        .circle::after{
+          margin-top: 2vw;
+        }
+      }
+      @media (min-width: 992px){
+        body{
+          padding-bottom: 10vw;
+        }
+        #headerInfo{
+          margin-top: min(2vh, 1vw);
+        }
+        #span div{
+          display: inline;
+        }
+        .circle::after {
+          margin-top: 2.5%;
+          margin-right: min(6vh, 0.8vw);
+          width: 1vw;
+          height: 1vw;
+          -moz-border-radius: 0.5vw;
+          -webkit-border-radius: 0.5vw;
+          border-radius: 0.5vw;
+        }
+        h1{
+          font-size: min(15vh, 6vw);
+        }
+        header{
+          height: min(60vh, 35vw);
+        }
+        li{
+          font-size: min(20vh, 2vw);
+        }
+        .text{
+          font-size: min(60vh, 2vw);
+        }
+        span{
+          margin-left: 1vw;
+          width: 20vw;
+          font-size: min(9vh, 2.2vw);
+        }
+        .fa-solid{
+          margin-left: 1vw;
+          font-size: min(40vh, 2.5vw);
+        }
+        .split{
+          width: 50%;
+        }
+        .wrap{
+          width: 100%;
+          display: flex;
+        }
+        .left{
+          padding-left: 10%;
+          flex-direction: column;
+        }
+        .right{
+          padding-left: 0%;
+          flex-direction: column;
+        }
+        .profile{
+          font-size: 2vw;
+        }
+        .item{
+          padding-left: 0;
+          padding-top: 10%;
+          padding-right: 25%;
+        }
+        #pad1, #pad2{
+          padding-right: 10%;
+        }
+        .box{
+          width: min(25vh, 6vw);
+          height: min(5vh, 0.9vw);
+          border-radius: min(1vh, 0.2vw);
+        }
+        p{
+          font-size: min(10vh, 4vw);
+        }
+        span .fa-solid{
+          font-size: min(8vh, 2.2vw);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Dimitrije Zdravkovic</h1>
+        <p>Software Engineering Student</p>
+        <div id="headerInfo">
+          <span id="span">
+            <div><i class="fa-solid fa-envelope" style="color: #d9a4c2;"></i> <a href="mailto:dimitrijezdravkovic20@gmail.com">dimitrijezdravkovic20@gmail.com</a></div>
+            <div><i class="fa-solid fa-phone" style="color: #d9a4c2;"></i> <a href="tel:+381648938904">+381648938904</a></div>
+            <div>
+              <i class="fa-solid fa-location-dot" style="color: #d9a4c2;"></i> Belgrade, Serbia
+              <i class="fa-solid fa-user" style="color: #d9a4c2;"></i> Male
+            </div>
+          </span>
+        </div>
+      </div>
+    </header>
+    <div class="wrap">
+      <div class="split left">
+        <div class="item">
+          <i class="fa-solid fa-graduation-cap fa-xl" style="color: #481a35; margin-left: 0;"></i> <p class="text bold heading">EDUCATION</p>
+          <div class="box">&nbsp;</div>
+          <p class="text bold">Software engineering,<br>School of Electrical Engineering</p>
+          <br>
+          <p class="text">2022 – present | Belgrade, Serbia</p>
+          <br><br>
+          <p class="text bold">Information Techology,<br>High School "Gimnazija Kraljevo"</p>
+          <br>
+          <p class="text">2018 – 2022 | Kraljevo, Serbia</p>
+        </div>
+        <div class="item" id="pad1">
+          <i class="fa-solid fa-brain fa-xl" style="color: #481a35; margin-left: 0;"></i> <p class="text bold heading">SKILLS</p>
+          <div class="box">&nbsp;</div>
+          <p class="text bold circle">HTML, CSS, JavaScript</p>
+          <span class="circle"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <br>
+          <p class="text">Bootstrap, jQuery, jQueryUI</p>
+          <div class="br"></div>
+          <p class="text bold circle">Core PHP</p>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <div class="br"></div>
+          <p class="text bold circle">SQL</p>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <br>
+          <p class="text">MySQL</p>
+          <div class="br"></div>
+          <p class="text bold circle fill">C</p>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <div class="br"></div>
+          <p class="text bold circle">Core Java</p>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <div class="br"></div>
+          <p class="text bold circle">Python</p>
+          <span class="circle"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <div class="br"></div>
+          <p class="text bold circle">OOP Concept</p>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <br>
+          <p class="text">PHP, C++</p>
+          <div class="br"></div>
+          <p class="text bold circle">Data structures, Algorithms</p>
+          <span class="circle"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+        </div>
+        <div class="item" id="pad2">
+          <i class="fa-solid fa-earth-americas fa-xl" style="color: #481a35; margin-left: 0;"></i> <p class="text bold heading">LANGUAGES</p>
+          <div class="box">&nbsp;</div>
+          <p class="text bold circle fill">Serbian</p>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <div class="br"></div>
+          <p class="text bold circle">English</p>
+          <span class="circle"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+          <span class="circle fill"></span>
+        </div>
+      </div>
+      <div class="split right">
+        <div class="item">
+          <i class="fa-solid fa-briefcase fa-xl" style="color: #481a35; margin-left: 0;"></i> <p class="text bold heading">PROFFESIONAL EXPERIENCE</p>
+          <div class="box">&nbsp;</div>
+          <ul>
+            <li>Without work experience</li>
+            <li>Looking for an internship</li>
+          </ul>
+        </div>
+        <div class="item" style="text-align: justify;">
+          <i class="fa-solid fa-address-card fa-xl" style="color: #481a35; margin-left: 0;"></i> <p class="text bold heading">PROFILE</p>
+          <div class="box">&nbsp;</div>
+          <p class="text profile">I am a student from Kraljevo, enrolled in the
+            School of Electrical Engineering at the University
+            of Belgrade. Looking for my first internship
+            opportunity, I look forward to applying my
+            knowledge and passion to real-world projects.</p>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-certificate fa-xl" style="color: #481a35; margin-left: 0;"></i> <p class="text bold heading">CERTIFICATES</p>
+          <div class="box">&nbsp;</div>
+          <ul>
+            <li>Database Foundations, Oracle</li>
+          </ul>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-folder-open fa-xl" style="color: #481a35; margin-left: 0;"></i> <p class="text bold heading">PROJECTS</p>
+          <div class="box">&nbsp;</div>
+          <p class="text bold">Android mobile game, Unity</p>
+          <br>
+          <p class="text">2022</p>
+          <br>
+          <ul>
+            <li><a class="text profile" href="https://play.google.com/store/apps/details?id=com.ZDSoftware.SpinScore&hl=en&gl=US&pli=1">https://play.google.com/store/apps/details?id=com.ZDSoftware.SpinScore&hl=en&gl=US&pli=1</a></li>
+          </ul>
+          <p class="text bold">The responsive version of this CV using HTML & CSS</p>
+          <br>
+          <p class="text">2023</p>
+          <br>
+          <ul>
+            <li><a class="text profile" href="https://dim48.github.io/">https://dim48.github.io/</a></p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
