@@ -11,72 +11,73 @@
     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/2758d855c0.js" crossorigin="anonymous"></script>
     <style>
-      body{
+      body {
         margin: 0;
         background-color: #fbf9f6;
         padding-bottom: 10vh;
       }
-      header{
+      header {
         background-color: #6e2751;
-        height: min(250vh, 50vw);
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top: 50px;
       }
-      #headerInfo{
-        margin-top: min(1vh, 1vw);
+      #headerInfo {
+        margin-top: 10px;
         text-align: center;
+        padding-bottom: 50px;
       }
-      h1{
+      h1 {
         margin: auto;
         text-align: center;
         font-family: sans-serif;
         font-size: 8vw;
         color: #fbf9f6;
       }
-      p{
+      p {
         font-size: 5.5vw;
         color: #fbf9f6;
         margin: auto;
         text-align: center;
         font-family: 'Mulish', sans-serif;
       }
-      span{
+      span {
         color: white;
         text-align: center;
       }
-      a{
+      a {
         color: white;
         text-decoration: none;
         word-break: break-all;
       }
-      a:hover{
+      a:hover {
         background-color: rgba(255, 255, 0, 0.2);
       }
-      .text{
+      .text {
         font-size: 4vw;
         display: inline;
         color: #481a35;
       }
-      .bold{
+      .bold {
         font-weight: 900;
         font-size: min(50vh, 4.2vw);
       }
-      .item{
+      .item {
         padding-left: 10%;
         padding-top: 10%;
         padding-right: 10%;
       }
-      ul{
+      ul {
         list-style-position: inside;
         padding-left: 0;
       }
-      li{
+      li {
         font-family: 'Mulish', sans-serif;
         font-size: 4vw;
         color: #481a35;
       }
-      .box{
+      .box {
         margin-top: 1%;
         margin-bottom: 3%;
         width: min(60vh, 12.5vw);
@@ -84,7 +85,7 @@
         border-radius: min(1vh, 0.3vw);
         background-color: rgb(164, 117, 150);
       }
-      .br{
+      .br {
         height: 2vw;
       }
       .circle::after {
@@ -99,42 +100,42 @@
         -webkit-border-radius: 1vw;
         border-radius: 1vw;
       }
-      .fill::after{
+      .fill::after {
         background-color: #a47596;
       }
-      .fa-solid{
+      .fa-solid {
         position: relative;
         font-size: 5vw;
         bottom: 0.3vw;
       }
-      #span div .fa-solid{
+      #span div .fa-solid {
         bottom: 0;
       }
-      .heading{
+      .heading {
         font-size: 5vw;
       }
-      @media (max-width: 992px){
-        #span{
+      @media (max-width: 992px) {
+        #span {
           font-size: 4.5vw;
         }
-        #span div{
+        #span div {
           margin-top: 1vw;
         }
       }
-      @media (min-width: 400px){
-        .circle::after{
+      @media (min-width: 400px) {
+        .circle::after {
           margin-top: 2vw;
         }
       }
-      @media (min-width: 992px){
-        body{
-          padding-bottom: 10vw;
+      @media (min-width: 992px) {
+        .circle {
+          font-size: 0;
         }
-        #headerInfo{
-          margin-top: min(2vh, 1vw);
+        #span div {
+          padding-bottom: 10px;
         }
-        #span div{
-          display: inline;
+        body {
+          padding-bottom: 80px;
         }
         .circle::after {
           margin-top: 2.5%;
@@ -145,63 +146,99 @@
           -webkit-border-radius: 0.5vw;
           border-radius: 0.5vw;
         }
-        h1{
-          font-size: min(15vh, 6vw);
+        h1 {
+          font-size: 90px;
         }
-        header{
-          height: min(60vh, 35vw);
+        li {
+          font-size: 25px;
         }
-        li{
-          font-size: min(20vh, 2vw);
-        }
-        .text{
+        .text {
           font-size: min(60vh, 2vw);
         }
-        span{
-          margin-left: 1vw;
-          width: 20vw;
-          font-size: min(9vh, 2.2vw);
+        span {
+          font-size: 42px;
         }
-        .fa-solid{
-          margin-left: 1vw;
-          font-size: min(40vh, 2.5vw);
+        .fa-solid {
+          margin-left: 20px;
+          font-size: 30px;
         }
-        .split{
+        span .fa-solid {
+          font-size: 35px;
+        }
+        .split {
           width: 50%;
         }
-        .wrap{
+        .wrap {
           width: 100%;
           display: flex;
         }
-        .left{
+        .left {
           padding-left: 10%;
           flex-direction: column;
         }
-        .right{
+        .right {
           padding-left: 0%;
           flex-direction: column;
         }
-        .profile{
-          font-size: 2vw;
+        .profile {
+          font-size: 25px;
         }
-        .item{
+        .item {
           padding-left: 0;
           padding-top: 10%;
           padding-right: 25%;
         }
-        #pad1, #pad2{
+        #pad1, #pad2 {
           padding-right: 10%;
         }
-        .box{
-          width: min(25vh, 6vw);
-          height: min(5vh, 0.9vw);
-          border-radius: min(1vh, 0.2vw);
+        .box {
+          width: 80px;
+          height: 12px;
+          border-radius: 2px;
         }
-        p{
-          font-size: min(10vh, 4vw);
+        p {
+          font-size: 60px;
         }
-        span .fa-solid{
-          font-size: min(8vh, 2.2vw);
+        .br {
+          height: 20px;
+        }
+        .heading {
+          font-size: 35px;
+        }
+      }
+      @media (min-width: 1500px) {
+        .box {
+          width: 100px;
+          height: 16px;
+          border-radius: 3px;
+        }
+        #span div {
+          display: inline;
+        }
+        .circle::after {
+          margin-top: 10px;
+          margin-right: 15px;
+          width: 20px;
+          height: 20px;
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+        }
+        span .fa-solid {
+          font-size: 35px;
+        }
+        .text, li {
+          font-size: 30px;
+        }
+        span {
+          font-size: 40px;
+        }
+        .fa-solid {
+          font-size: 40px;
+          bottom: 7px;
+        }
+        .heading {
+          font-size: 40px;
         }
       }
     </style>
