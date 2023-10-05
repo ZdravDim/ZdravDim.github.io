@@ -115,7 +115,11 @@
         font-size: 5vw;
       }
       .clipper {
-        display: none;
+        display: inline;
+        font-size: 3.5vw;
+        left: 1vw;
+        bottom: -2px;
+        color: #a47596;
       }
       @media (max-width: 992px) {
         #span {
@@ -202,16 +206,12 @@
         .br {
           height: 30px;
         }
+        .clipper {
+          font-size: 1.5vw;
+          left: -12px;
+        }
       }
       @media (min-width: 1500px) {
-        .clipper {
-          display: inline;
-          color: #a47596;
-          font-size: 20px !important;
-          left: -10px !important;
-          bottom: -2px !important;
-        }
-
         .box {
           width: 80px;
           height: 12px;
@@ -248,6 +248,12 @@
         }
         .heading {
           font-size: 30px;
+        }
+        .clipper {
+          display: inline;
+          font-size: 20px;
+          left: -10px;
+          bottom: -2px;
         }
       }
     </style>
