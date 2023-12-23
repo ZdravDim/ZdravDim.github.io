@@ -10,6 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/2758d855c0.js" crossorigin="anonymous"></script>
+    <script>
+      function downloadURI() {
+        fetch("https://raw.githubusercontent.com/Dim48/dim48.github.io/main/Zdravkovic%20Dimitrije%20CV.pdf", { method: 'get', referrerPolicy: 'no-referrer' })
+        .then(res => res.blob())
+        .then(res => {
+          const aElement = document.createElement('a');
+          aElement.setAttribute('download', "Zdravkovic Dimitrije CV.pdf");
+          const href = URL.createObjectURL(res);
+          aElement.href = href;
+          aElement.setAttribute('target', '_blank');
+          aElement.click();
+          URL.revokeObjectURL(href);
+        });
+      }
+    </script>
     <style>
       #image {
         display: none;
@@ -258,6 +273,7 @@
 
         #download:hover {
           background-color: #493a56;
+          cursor: pointer;
         }
 
         body {
@@ -325,7 +341,7 @@
   </head>
   <body>
     <img id="image" src="1.jpg" height="150px" width="150px">
-    <a id="download" href="https://github.com/Dim48/dim48.github.io/blob/main/Zdravkovic%20Dimitrije%20CV.pdf" download="file"> Download </a>
+    <a id="download" onclick="downloadURI()"> Download </a>
     <div id="body-div">
       <header>
         <div>
